@@ -1,6 +1,9 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import styled from '@emotion/styled';
+import learningProject from '../assets/learning Project.png';
+import musicProject from '../assets/music project.png';
+import portfolioProject from '../assets/portfolio.png';
 
 const ProjectsSection = styled.section`
   padding: 6rem 2rem;
@@ -123,7 +126,7 @@ const projects = [
   {
     title: "Learning Management System",
     description: "An interactive learning platform that helps students and teachers connect, manage courses, assignments, and track progress in real-time.",
-    image: "src/assets/learning Project.png",
+    image: learningProject,
     tech: ["HTML", "css", "javascript"],
     liveUrl: "#",
     githubUrl: "#"
@@ -131,7 +134,7 @@ const projects = [
   {
     title: "Music Streaming App",
     description: "A modern music streaming application with a sleek interface, playlist management, and personalized music recommendations.",
-    image: "src/assets/music project.png",
+    image: musicProject,
     tech: ["HTML", "css", "javascript"],
     liveUrl: "#",
     githubUrl: "#"
@@ -139,7 +142,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website showcasing my projects and skills, built with React and featuring smooth animations.",
-    image: "src/assets/portfolio.png",
+    image: portfolioProject,
     tech: ["HTML", "css", "javascript"],
     liveUrl: "#",
     githubUrl: "#"

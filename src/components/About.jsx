@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import styled from '@emotion/styled';
+import profileImage from '../assets/profile.jpg';
 
 const AboutSection = styled.section`
   padding: 6rem 2rem;
@@ -128,7 +129,7 @@ const skills = [
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -192,10 +193,10 @@ const About = () => {
           </AboutText>
           <ImageContainer>
             <AboutImage
-              src="/src/assets/profile.jpg"
-              alt="Omar's profile"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+              src={profileImage}
+              alt="Profile"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             />
           </ImageContainer>
